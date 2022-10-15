@@ -1,8 +1,8 @@
 import { FormEvent, useState } from "react";
 
 import axios from 'axios'
-import { Checkbox } from "@radix-ui/react-checkbox";
 
+import { Checkbox } from "../components/Checkbox";
 import { Button } from "../components/Button";
 import { Heading } from "../components/Heading";
 import { TextInput } from "../components/TextInput";
@@ -74,10 +74,10 @@ export function Signin(){
       </form>
       <footer className='flex flex-col items-center gap-4 mt-8'>
         <Text asChild size='sm' >
-          <a href='' className='text-gray-400 underline transition-colors hover:text-gray-200' >Não possui conta? Crie uma agora!</a>
+          <a href='#' className='text-gray-400 underline transition-colors hover:text-gray-200' >Não possui conta? Crie uma agora!</a>
         </Text>
         <Text asChild size='sm'>
-          <a href='' className='text-gray-400 underline transition-colors hover:text-gray-200'  >Esqueceu sua senha</a>
+          <a href='#' className='text-gray-400 underline transition-colors hover:text-gray-200'  >Esqueceu sua senha</a>
         </Text>
         
 
