@@ -1,4 +1,5 @@
 import { FormEvent, useState } from "react";
+import {Link} from 'react-router-dom'
 
 import axios from 'axios'
 
@@ -28,7 +29,7 @@ export function Signin(){
    }
 
    return(
-      <div className='w-screen h-screen text-gray-100 bg-gray-900 flex flex-col items-center justify-center'>
+    <>
       <header className='flex flex-col items-center'>
       <Logo className='w-[105px] h-[95px]'/>
 
@@ -74,15 +75,12 @@ export function Signin(){
       </form>
       <footer className='flex flex-col items-center gap-4 mt-8'>
         <Text asChild size='sm' >
-          <a href='#' className='text-gray-400 underline transition-colors hover:text-gray-200' >Não possui conta? Crie uma agora!</a>
+          <Link to='/register' className='text-gray-400 underline transition-colors hover:text-gray-200' >Não possui conta? Crie uma agora!</Link>
         </Text>
         <Text asChild size='sm'>
           <a href='#' className='text-gray-400 underline transition-colors hover:text-gray-200'  >Esqueceu sua senha</a>
         </Text>
-        
-
-
       </footer>
-    </div>
+    </>
    )
 }
